@@ -65,7 +65,10 @@ padding-block: 15px;
     justify-content: space-between;
     align-items: center;
    
-}
+} 
+
+
+
 
 .header .container .head-links {
     display: flex;
@@ -74,11 +77,16 @@ padding-block: 15px;
    
 }
 
+
+
+
 .header .container .head-links nav ul {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
+
 
 .header .container .head-links nav ul li a {
   text-transform: capitalize;
@@ -147,6 +155,14 @@ padding-block: 15px;
  max-width: 600px;
 }
 
+@media (max-width: 767px) {
+    .landing .container .landing-text {
+        align-items: center;
+        width: 200px;
+
+    }
+  }
+
 .landing .container .landing-text h3 {
     font-family: "Teko", sans-serif;
     line-height: 1.2;
@@ -158,12 +174,26 @@ padding-block: 15px;
 
 }
 
+@media (max-width: 767px) {
+    .landing .container .landing-text h3 {
+   font-size: 20px;
+
+    }
+  }
+
 .landing .container .landing-text p {
     font-size: 16px;
     text-transform: capitalize;
     line-height: 1.6;
 
 }
+
+@media (max-width: 767px) {
+    .landing .container .landing-text p {
+   font-size: 14px;
+
+    }
+  }
 .landing .container .landing-text a {
     color: white;
     background-image: linear-gradient(to right, #0181f5 0%, #5db2ff 100%);
@@ -197,6 +227,13 @@ padding-block: 15px;
     /* height: calc(100vh - (563px + 78.5px)); */
    
 }
+
+@media (max-width: 767px) {
+    .services {
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+
+    }
+  }
 
 .services .services-hospitality, .services-call {
   text-align: center;
@@ -272,10 +309,20 @@ padding-bottom: 50px;
     align-items: center;
 }
 
+@media (max-width: 767px) {
+    .good-health .container  {
+      flex-direction: column;
+      justify-content: center;
+
+}
+  }
+
 .good-health .health.img {
     width: 100%;
     position: relative;
 }
+
+
 
 
 
@@ -284,6 +331,8 @@ padding-bottom: 50px;
     display: inline-block;
     position: relative;
 }
+
+
 
 .good-health .health-text {
     display: flex;
@@ -318,13 +367,18 @@ padding-bottom: 50px;
     background-repeat: no-repeat;  
     background-position: top center;
     width: 100%;
-  
     height:100%;
     top: 29px;
     left: -100%;
     position: absolute;
    
 }
+
+@media (max-width: 767px) {
+    .good-health .health-text h2::after {
+display: none;
+    }
+  }
 
 .good-health .health-text > p:nth-child(2){
     font-weight: bold;
@@ -470,6 +524,15 @@ letter-spacing: 5px;
     font-family: 'Times New Roman', Times, serif;
 }
 
+@media (max-width: 767px) {
+    .picture .picture-text p {
+      font-size: 12px;
+      left: 2%;
+      top: 10%;
+
+}
+  }
+
 .picture .picture-text p a {
  text-transform: capitalize;
  display: inline-block;
@@ -479,6 +542,13 @@ padding: 5px;
 border: 1px double black;
 color: black;
 }
+
+@media (max-width: 767px) {
+    .picture .picture-text p a {
+      margin-top: 5px;
+
+}
+  }
 
 /* start our doctor  */
 
@@ -492,6 +562,14 @@ color: black;
     margin-left: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
+
+@media (max-width: 767px) {
+    .our-doctors .container h1 {
+      margin-left: 0;
+      text-align: center;
+
+}
+  }
 
 .our-doctors .doctors-Name {
     display: grid;
