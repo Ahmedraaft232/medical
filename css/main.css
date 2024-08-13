@@ -67,6 +67,25 @@ padding-block: 15px;
    
 } 
 
+@media (max-width: 767px) {
+    .header .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+  }
+
+
+@media (max-width: 767px) {
+    .header .container .head-links nav ul{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+  }
+
 
 
 
@@ -115,6 +134,13 @@ padding-block: 15px;
     text-transform: capitalize;
     
 }
+
+@media (max-width: 767px) {
+    .header .container .appointment a{
+    margin-top: 10px;
+
+}
+  }
 
 .header .container .appointment a:hover {
     background-color: white;
@@ -580,6 +606,10 @@ color: black;
 .doctors-Name .detalis {
     background-color: #F5FBFF;
     margin-inline: 10px;
+}
+
+.doctors-Name .detalis img {
+width: 100%;
 }
 
 .our-doctors .doctors-Name .doctors-text {
